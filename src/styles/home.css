@@ -1,0 +1,227 @@
+.container{
+    display: flex;   
+    justify-content: space-between;
+    font-family: 'Trebuchet MS',Georgia, 'Times New Roman', Times, serif;
+
+}
+li,.aa{
+    margin-left: 40px;
+      list-style: none;
+      font-size: 16px;
+      display: flex;
+      text-decoration: none;
+      padding: 4px;
+      font-size: 16px;
+      font-weight: 100;
+      font-family: 'Trebuchet MS',Georgia, 'Times New Roman', Times, serif;
+
+      
+ }
+.container .explore{
+    margin-right: 260px;
+    font-size: 20px;
+    
+ }
+ p{
+    font-size: 29px;
+    padding: 0%;
+    
+ }
+button{
+    background-color: rgb(103, 102, 102);
+    color: white;
+    border: none;
+    width:37%;
+    height:40px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS',Georgia, 'Times New Roman', Times, serif;
+}
+.one{
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    /* gap: 20px; */
+    padding: 2px;
+   
+    align-items: center;
+    
+}
+.desc {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 80px;
+    font-size: 17px;
+}
+.desc p{
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img1 p{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img2 p{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img3 p{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img4 p{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img5 p{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img6 p{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.arrivals{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    gap:-20px;
+}
+h1{
+    margin-left: 4%;
+    color: rgb(57, 57, 57);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.blog-card3 img{
+    width:200px;
+}
+.choose{
+    display: flex;
+    gap: 300px;
+    margin-left: 17%;
+    /* justify-content: space-between; */
+}
+.choose1{
+    display: flex;
+    gap: 300px;
+    margin-left: 5%;
+    /* justify-content: space-between; */
+}
+.choose1 p{
+    font-size: 10;
+}
+.easy{
+    width: 7%;
+    height: 80px;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -20px;
+  }
+  .customer{
+    width: 7%;
+    height: 80px;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -20px;
+  }
+  .high{
+    width: 7%;
+    height: 80px;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -20px;
+  }
+  .feature-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .feature-box {
+    max-width: 250px;
+  }
+  
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 35px;
+    color: black;
+    margin: 0 auto 15px;
+  }
+  
+  .feature-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .explore {
+        margin-right: 0;
+        text-align: center;
+    }
+    .desc {
+        gap: 20px;
+    }
+    button {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .desc {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .arrivals {
+        flex-direction: column;
+        gap: 15px;
+    }
+    button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        gap: 10px;
+    }
+    p {
+        font-size: 18px;
+    }
+    button {
+        width: 100%;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}

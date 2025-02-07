@@ -1,0 +1,19 @@
+.Navcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cont1{
+    width: 9rem;
+    height: 4rem;
+}
+button{
+    /* width: 20%;
+    background-color: blueviolet; */
+}
+

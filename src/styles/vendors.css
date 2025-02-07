@@ -1,0 +1,283 @@
+  /* Base styles */
+  .title {
+    width: 97%;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .sorting {
+    width: 200px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sorting select {
+    width: 100%;
+    height: 40px;
+    padding: 10px 35px 10px 15px;
+    border: 1px solid rgb(79, 76, 76);
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .btn {
+    width: auto;
+    height: 50px;
+    margin-left: auto;
+  }
+  
+  .btn button {
+    width: 120px;
+    height: 40px;
+    background-color: rgb(85, 85, 237);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.vending ul li{
+    display:inline-flex;
+}
+.ima{
+    display: flex;
+    height: 90px;
+    margin-top: -120px;
+}
+.ima .image1{
+    border: none;
+    margin-left: 270px;
+    
+}
+.ima .image2{
+    border: none;
+    margin-left: 250px;
+    
+}
+.ima .image3{
+    border: none;
+    border-radius: 50%;
+    margin-left: 256px;
+   
+}
+.ima img{
+    border: solid rgb(243, 239, 239) 5px;
+   border-radius: 50%;
+}
+.image-text {
+    position: absolute;
+    background-size: cover;
+    top: 80%; 
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(69, 69, 69, 0.5); /* Optional: Adds readability */
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    width: 24.5%;
+    height: 240px;
+    margin-left: 6px;
+    margin-top: -37px;
+    align-items: center;
+  }
+  .image-text2 {
+    position: absolute;
+    background-size: cover;
+    top: 80%; 
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(69, 69, 69, 0.5); /* Optional: Adds readability */
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    width: 24.5%;
+    height: 240px;
+    margin-left: 30.5%;
+    margin-top: -37px;
+    align-items: center;
+  }
+  .image-text3 {
+    position: absolute;
+    background-size: cover;
+    top: 80%; 
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(69, 69, 69, 0.5); /* Optional: Adds readability */
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    width: 24.5%;
+    height: 240px;
+    margin-left: 60.6%;
+    margin-top: -37px;
+    align-items: center;
+  }
+
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  
+    .store-footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .image-text,
+    .image-text2,
+    .image-text3 {
+      height: 300px;
+    }
+  }
+  
+  /* Desktop (992px to 1199px) */
+  @media screen and (max-width: 1199px) {
+    .image-text,
+    .image-text2,
+    .image-text3 {
+      height: 240px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Tablet (768px to 991px) */
+  @media screen and (max-width: 991px) {
+    .title {
+      width: 95%;
+      padding: 0 10px;
+    }
+  
+    .sorting {
+      width: 150px;
+    }
+  
+    .btn button {
+      width: 100px;
+    }
+  
+    .image-text,
+    .image-text2,
+    .image-text3 {
+      height: 200px;
+      font-size: 16px;
+    }
+  
+    .ima {
+      gap: 20px;
+    }
+  }
+  
+  /* Large Mobile (576px to 767px) */
+  @media screen and (max-width: 767px) {
+    .title {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .sorting {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .btn {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .btn button {
+      width: 100%;
+    }
+  
+    .ima {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .image-text,
+    .image-text2,
+    .image-text3 {
+      position: relative;
+      width: 90%;
+      height: 180px;
+      margin: 10px auto;
+      left: auto;
+      transform: none;
+    }
+  
+    .ima .image1,
+    .ima .image2,
+    .ima .image3 {
+      margin: 0;
+    }
+  }
+  
+  /* Mobile (375px to 575px) */
+  @media screen and (max-width: 575px) {
+    .title {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .sorting select {
+      height: 35px;
+      font-size: 14px;
+    }
+  
+    .image-text,
+    .image-text2,
+    .image-text3 {
+      height: 150px;
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .ima img {
+      border-width: 3px;
+    }
+  }
+  
+  /* Small Mobile (up to 374px) */
+  @media screen and (max-width: 374px) {
+    .sorting select {
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .btn button {
+      height: 35px;
+      font-size: 14px;
+    }
+  
+    .image-text,
+    .image-text2,
+    .image-text3 {
+      height: 120px;
+      font-size: 12px;
+    }
+  
+    .ima .image1,
+    .ima .image2,
+    .ima .image3 {
+      width: 70px;
+      height: 70px;
+    }
+  }
+

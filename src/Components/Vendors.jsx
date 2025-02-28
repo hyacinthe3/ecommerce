@@ -63,7 +63,7 @@ const Vendors = () => {
                         New York,<br />
                         New York,United States(US)
                     </div>
-                    <img src={s1} alt="" width={120} height={90} /><br />
+                    <img src={s1} alt="" width={120} height={90} /><br /><br /><br /><br />
                     <FaArrowCircleRight style={{ color: "blue", fontSize: "20px",cursor: "pointer" }}/>
                 </div>
                 <div className="image2">
@@ -78,7 +78,7 @@ const Vendors = () => {
                         central park, <br />
                         New York,<br />
                         New York,United States(US)
-                    </div><br />
+                    </div><br /><br /><br /><br />
                     <FaArrowCircleRight style={{ color: "blue", fontSize: "20px",cursor: "pointer" }}/>
                 </div>
                 <div className="image3">
@@ -93,11 +93,12 @@ const Vendors = () => {
                         central park, <br />
                         New York,<br />
                         New York,United States(US)
-                    </div><br />
+                    </div><br /><br /><br /><br />
                     <FaArrowCircleRight style={{ color: "blue", fontSize: "20px",cursor: "pointer" }}/>
                 </div>
             </div>
-            <br /><br /><br />
+            <br /><br /><br /><br /><br />
+
         </div>
     )
 }

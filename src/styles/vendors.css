@@ -54,7 +54,7 @@
 }
 .ima .image1{
     border: none;
-    margin-left: 270px;
+    margin-left: 240px;
     
 }
 .ima .image2{
@@ -75,8 +75,8 @@
 .image-text {
     position: absolute;
     background-size: cover;
-    top: 80%; 
-    left: 20%;
+    top: 73.9%; 
+    left: 16.2%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
@@ -84,7 +84,7 @@
     background: rgba(69, 69, 69, 0.5); /* Optional: Adds readability */
     padding: 5px 10px;
     /* border-radius: 5px; */
-    width: 24.5%;
+    width: 26.2%;
     height: 240px;
     margin-left: 6px;
     margin-top: -37px;
@@ -93,8 +93,8 @@
   .image-text2 {
     position: absolute;
     background-size: cover;
-    top: 80%; 
-    left: 20%;
+    top: 74%; 
+    left: 16.2%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
@@ -102,8 +102,8 @@
     background: rgba(69, 69, 69, 0.5); /* Optional: Adds readability */
     padding: 5px 10px;
     /* border-radius: 5px; */
-    width: 24.5%;
-    height: 240px;
+    width: 26.3%;
+    height: 200px;
     margin-left: 30.5%;
     margin-top: -37px;
     align-items: center;
@@ -111,8 +111,8 @@
   .image-text3 {
     position: absolute;
     background-size: cover;
-    top: 80%; 
-    left: 20%;
+    top: 74%; 
+    left: 16.2%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
@@ -120,7 +120,7 @@
     background: rgba(69, 69, 69, 0.5); /* Optional: Adds readability */
     padding: 5px 10px;
     /* border-radius: 5px; */
-    width: 24.5%;
+    width: 26.3%;
     height: 240px;
     margin-left: 60.6%;
     margin-top: -37px;

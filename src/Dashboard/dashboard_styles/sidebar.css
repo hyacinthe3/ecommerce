@@ -85,12 +85,4 @@
     transform: translateX(-100%); /* This will move the sidebar out of view */
 }
 
-:root {
-    --sidebar-hover-color: #007bff; /* Default hover color */
-}
 
-/* Ensure the sidebar items apply the color */
-.sidebar .nav-item:hover {
-    background-color: var(--sidebar-hover-color) !important;
-    transition: background 0.3s ease-in-out;
-}

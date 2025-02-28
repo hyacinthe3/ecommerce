@@ -6,25 +6,23 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { GoHeart } from "react-icons/go";
 import { PiShoppingBagThin } from "react-icons/pi";
 import { LuUserRound } from "react-icons/lu";
-import Usestatehook from './Login'; 
+import Usestatehook from './LoginForm'; // This is your LoginForm modal component
 
 const Navbar = () => {
-  const [modal, setModal] = useState(false); 
+  const [modal, setModal] = useState(false);  // State to control modal visibility
 
+  // Function to toggle login form visibility
   const handleloginform = () => {
-    // setModal((prev) => !prev); // Toggle modal state correctly
-    setModal(!modal)
+    setModal(!modal);  // Toggle modal visibility
   };
-
-  
- 
 
   return (
     <div>
-      {/* Display Login Modal When `modal` is True */}
+      {/* Show Login Modal When `modal` is True */}
       {modal && <Usestatehook handleloginform={handleloginform} />}
 
       <div className="header">
+        <br /><br /><br />
         <div className="logo">
           <h1>Botiga</h1>
         </div>
@@ -42,27 +40,35 @@ const Navbar = () => {
             <span className="arrow-down">▼</span>
           </div>
 
-          <div className="search-box">
-            <input type="text" placeholder="Search products..." />
-            <IoIosSearch 
-              style={{ fontSize: '28px', color: 'gray', cursor: 'pointer' }} 
-              onClick={handleloginform} //  Fixed click event
-              className='search'
+         
+<div class="search-box">
+  <input
+    type="text"
+    placeholder="Search products..."
+    class="search-input"
+  />
+  
+  <span class="search-icon" onclick="handleloginform()">
+      <IoIosSearch
+              className="search-icon"
+              
             />
-          </div>
+  </span>
+</div>
+
         </div>
 
         <div className="icons">
-          <LuUserRound 
-            style={{ color: "black", fontSize: "30px", cursor: "pointer" }} 
-            onClick={handleloginform} //  Open login modal when clicked
+          <LuUserRound
+            style={{ color: "black", fontSize: "30px", cursor: "pointer" }}
+            onClick={handleloginform} // Open login modal when clicked
           />
           <div className="cart-icon">
-            <PiShoppingBagThin style={{ color: "black", fontSize: "30px", cursor: "pointer" }}/>
+            <PiShoppingBagThin style={{ color: "black", fontSize: "30px", cursor: "pointer" }} />
             <span className="badge">0</span>
           </div>
           <div className="heart-icon">
-            <GoHeart style={{ color: "black", fontSize: "30px", cursor: "pointer" }}/>
+            <GoHeart style={{ color: "black", fontSize: "30px", cursor: "pointer" }} />
             <span className="badge">0</span>
           </div>
         </div>
@@ -74,16 +80,17 @@ const Navbar = () => {
         <div className="left">
           <div className="hover-container">
             <div className="trending-categories">
-              <span>Trending Categories</span>
-              <span className="arrow">↓</span>
+              <font color="white">
+                <span><font color="white">Trending Categories</font></span>
+                <span className="arrow">↓</span></font>
               <font color="black">
-              <ul className="hover-list">
-                <li>Body lotion</li>
-                <li>Electronics</li>
-                <li>Women Clothes</li>
-                <li>Shoes</li>
-                <li>Watch</li>
-              </ul>
+                <ul className="hover-list">
+                  <li>Body lotion</li>
+                  <li>Electronics</li>
+                  <li>Women Clothes</li>
+                  <li>Shoes</li>
+                  <li>Watch</li>
+                </ul>
               </font>
             </div>
           </div>
@@ -97,8 +104,6 @@ const Navbar = () => {
             <Link to="/Blog"><li>Blog</li></Link>
             <Link to="/Contact"><li>Contact</li></Link>
             {/* <Link to="/DashboardView"><li>DashboardView</li></Link> */}
-
-
           </ul>
         </div>
 

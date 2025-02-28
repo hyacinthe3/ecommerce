@@ -1,34 +1,80 @@
-import React from "react";
+import React, { useState } from 'react';
 import { IoMdClose } from "react-icons/io";
 import "../Styles/register.css";
-import Usestatehook from './Login'; 
 
-const RegisterForm = ({handleRegister}) => {
+const RegisterForm = ({ toggleForm, handleRegister }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add registration logic here
+    // For example, make an API request to register the user
+    console.log(formData);
+  };
+
   return (
-    <div className="overlay">
-
-      <div className="modal-contents">
-        <div className="auth-container">
-          <form action="" className="auth-form">
-            <div className="all">
-              <div className="logi">Register</div>
-                  <IoMdClose className="close-btn" onClick={handleRegister} />
-            </div>
-            <input type="text" placeholder="Enter your first name" className="input" required />
-            <input type="text" placeholder="Enter your last name" className="input" required />
-            <input type="email" placeholder="Enter your email" className="input" required />
-            <input type="password" placeholder="Confirm your password" className="input" required /><br />
-            <button type="submit" className="auth-button">Register</button>
-
-            <h5 className="auth-footer">
-              Already have an account? <a href="/login">Login</a>
-        </h5>
-          </form>
+    <div className="holdform">
+    <div className="auth-form-container">
+      <div className="all">
+        <div className="logi2"><h2>Register</h2></div>
+        <div className="ic">
+          
+            <IoMdClose className="close-btn" onClick={handleRegister} />
+          
         </div>
-      </div>      
+        
+      </div>
+      <form onSubmit={handleSubmit}>
+        <input 
+          type="text" 
+          placeholder="Enter name" 
+          className="input" 
+          name="name" 
+          value={formData.name} 
+          onChange={handleInputChange} 
+        /><br /><br />
+        <input 
+          type="email" 
+          placeholder="Enter email" 
+          className="input" 
+          name="email" 
+          value={formData.email} 
+          onChange={handleInputChange} 
+        /><br /><br />
+        <input 
+          type="password" 
+          placeholder="Enter password" 
+          className="input" 
+          name="password" 
+          value={formData.password} 
+          onChange={handleInputChange} 
+        /><br /><br />
+        <input 
+          type="password" 
+          placeholder="Confirm password" 
+          className="input" 
+          name="confirmPassword" 
+          value={formData.confirmPassword} 
+          onChange={handleInputChange} 
+        /><br /><br />
+        <button type="submit" className="auth-button">Register</button>
+      </form>
+      <h5 className="auth-footer">
+        Already have an account? <span onClick={toggleForm}>Login</span> {/* Switch to Login Form */}
+      </h5>
+    </div>
     </div>
   );
 };
 
 export default RegisterForm;
-

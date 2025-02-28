@@ -3,7 +3,7 @@
     width: auto;
     height: auto;
     margin-bottom: 90px;
-    margin-left: 23.5%;
+    margin-left: 18.5%;
 }
 h1{
     color: rgb(74, 74, 197);
@@ -46,4 +46,13 @@ h1{
     font-size: 24px;
     cursor: pointer;
     color: rgb(0, 0, 0);
+  }
+  .pie-container{
+    margin-right: 70%;
+    /* margin-left: ; */
+    height: 250px;
+  }
+  .pie{
+    margin-left: 50%;
+    margin-top: -300px;
   }

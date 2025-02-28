@@ -1,0 +1,72 @@
+.viewproducts{
+    width: 80%;
+    margin-left: 20%;
+}
+/* General Styles */
+.viewproducts {
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #7a74e5;
+  }
+  
+  .product-table th {
+    background-color: #7a74e5;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .product-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Stock Status Colors */
+  .in-stock {
+    color: rgb(60, 83, 216);
+    font-weight: bold;
+  }
+  
+  .out-of-stock {
+    color: rgb(53, 52, 52);
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .edit-btn, .delete-btn {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+
+
+  .act{
+    cursor: pointer;
+  }
+

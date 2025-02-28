@@ -119,6 +119,13 @@
     color: #007bff;
 }
 
+.search-bar{
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
 /* Spinning settings icon */
 @keyframes spin {
     from {

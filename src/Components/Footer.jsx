@@ -6,7 +6,7 @@ import footer from '../assets/footer.webp'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer"><br /><br />
       <div className="footer-container">
         {/* Top Section */}
         <div className="footer-top">

@@ -38,12 +38,12 @@ const Sidebar = () => {
 
             <ul>
                 <li className="nav-item"><Link to="/dashboard"><FaTachometerAlt /> Dashboard</Link></li>
-                <li className="nav-item"><Link to="/products"><FaBox /> Products</Link></li>
-                <li className="nav-item"><Link to="/vendors"><FaStore /> Vendors</Link></li>
-                <li className="nav-item"><Link to="/orders"><FaShoppingCart /> Orders</Link></li>
-                <li className="nav-item"><Link to="/categories"><FaTags /> Categories</Link></li>
-                <li className="nav-item"><Link to="/reports"><FaChartLine /> Reports</Link></li>
-                <li className="nav-item"><Link to="/support"><FaHeadset /> Support</Link></li>
+                <li className="nav-item"><Link to="/dashboard/Dashboardproducts"><FaBox />Products</Link></li>
+                <li className="nav-item"><Link to="/dashboard/Dashboardvendors"><FaStore /> Vendors</Link></li>
+                <li className="nav-item"><Link to="/dashboard/Dashboardorders"><FaShoppingCart /> Orders</Link></li>
+                <li className="nav-item"><Link to="/dashboard/Dashboardcategories"><FaTags /> Categories</Link></li>
+                <li className="nav-item"><Link to="/dashboard/Dashboardreports"><FaChartLine /> Reports</Link></li>
+                <li className="nav-item"><Link to="/dashboard/Dashboardsupport"><FaHeadset /> Support</Link></li>
             </ul>
         </div>
     );

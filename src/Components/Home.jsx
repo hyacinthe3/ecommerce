@@ -198,14 +198,7 @@ const Home = () => {
           </div>
         </div>
         <h1>New Arrival Products</h1>
-        {/* {arrivals.map((arrive) =>(
-          <div key={arrive.id} classname="arrived">
-            <img src={arrive.image} alt={`${arrive.image}'s Image`}  />
-            <h2>{arrive.name}</h2>
-            <h3>{arrive.price}</h3>
-          </div>
-        ))}
-         */}
+       
         <div className="arrivals">
 
           <div className="img8" id="11">
@@ -264,16 +257,7 @@ const Home = () => {
               </div>
             ))}
           </div>
-           {/* <div className='Navcontainer'>
-                      {productList.map((item) =>(
-                          <div className='cont' key={item.id}>
-                          <div ><img src={item.image} alt="" /></div> 
-                          <div>{item.cardTitle}</div>  
-                          <button type='button' className='button'
-                          onClick={()=>handleNavigate(item.id)}>view</button>
-                          </div>
-                      ))}
-                  </div> */}
+         
           <div className="blog-container2">
 
             {people2.map((person2) => (

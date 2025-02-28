@@ -14,9 +14,9 @@ const RegisterForm = ({handleRegister}) => {
               <div className="logi">Register</div>
                   <IoMdClose className="close-btn" onClick={handleRegister} />
             </div>
-            <input type="text" placeholder="Enter your full name" className="input" required />
+            <input type="text" placeholder="Enter your first name" className="input" required />
+            <input type="text" placeholder="Enter your last name" className="input" required />
             <input type="email" placeholder="Enter your email" className="input" required />
-            <input type="password" placeholder="Enter your password" className="input" required />
             <input type="password" placeholder="Confirm your password" className="input" required /><br />
             <button type="submit" className="auth-button">Register</button>
 

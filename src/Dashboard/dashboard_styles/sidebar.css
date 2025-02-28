@@ -1,0 +1,96 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    transition: all 0.3s;
+    z-index: 2000;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar-profile {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    /* background: #34495e; */
+    border-radius: 6px;
+    color: #ffffff;
+  }
+  .profile-icon {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .company-name {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #495057;
+    
+}
+
+.sidebar ul li a svg {
+    margin-right: 10px;
+}
+.prof{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 18rem;
+    color: rgb(82, 65, 166);
+    margin-top: -3rem;
+    margin-right: 20%;
+    margin-bottom: 30px;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%); /* This will move the sidebar out of view */
+}
+
+:root {
+    --sidebar-hover-color: #007bff; /* Default hover color */
+}
+
+/* Ensure the sidebar items apply the color */
+.sidebar .nav-item:hover {
+    background-color: var(--sidebar-hover-color) !important;
+    transition: background 0.3s ease-in-out;
+}

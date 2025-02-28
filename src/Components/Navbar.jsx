@@ -96,6 +96,8 @@ const Navbar = () => {
             <Link to="/Vendors"><li>Vendors</li></Link>
             <Link to="/Blog"><li>Blog</li></Link>
             <Link to="/Contact"><li>Contact</li></Link>
+            {/* <Link to="/DashboardView"><li>DashboardView</li></Link> */}
+
 
           </ul>
         </div>

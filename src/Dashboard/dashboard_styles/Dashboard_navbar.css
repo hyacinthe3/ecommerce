@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Default Navbar Icons */
+.navbar .icon {
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Dark Mode Navbar */
+.navbar.dark-mode {
+    background-color: #222; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+/* Dark Mode Icons */
+.navbar.dark-mode .icon {
+    color: #ffffff; /* Change icons to white */
+}
+
+/* Hover Effects */
+.navbar .nav-icon:hover {
+    color: #007bff;
+}
+
+.navbar.dark-mode .nav-icon:hover {
+    color: #66b2ff;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    margin-left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+    color: #007bff;
+}
+
+/* Profile dropdown menu */
+.hover-list {
+    position: absolute;
+    top: 40px;
+    right: -70px;
+    background: white;
+    width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 8px 0;
+    display: none;
+    z-index: 1000;
+}
+
+.nav-icon:hover .hover-list {
+    display: block;
+}
+
+.hover-list li {
+    list-style: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hover-list li:hover {
+    background: #f0f0f0;
+    color: #007bff;
+}
+
+/* Spinning settings icon */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinning-icon {
+    animation: spin 2s linear infinite;
+}
+
+/* Settings Dropdown */
+.settings-container {
+    position: relative;
+}
+
+.settings-dropdown {
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    background: white;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+}
+
+.settings-container:hover .settings-dropdown {
+    display: block;
+}
+
+.settings-dropdown button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+.settings-dropdown button:hover {
+    background: #0056b3;
+}
+
+.language-selector {
+    margin-top: 10px;
+}
+
+.language-selector label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.language-selector select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.navbar.dark-mode {
+    background-color: #333;
+}
+
+.settings-dropdown.dark-mode {
+    background: #444;
+    color: white;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Default Navbar Styles */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-icons {
+        display: flex;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .settings-dropdown {
+        right: 0;
+    }
+}

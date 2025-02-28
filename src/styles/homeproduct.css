@@ -1,0 +1,17 @@
+.form2{
+    width: 27%;
+    height: auto;
+    border: 1px solid black;
+    align-items: center;
+    border-top: none;
+    border-radius: 5px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+.btn{
+    background-color: rgb(132, 132, 232);
+    height: 30px;
+}
